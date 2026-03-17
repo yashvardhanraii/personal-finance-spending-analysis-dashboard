@@ -35,7 +35,7 @@ SQL views were created to structure and aggregate the data for analysis. Each vi
 ---
 
 ## Dashboard Preview
-![Dashboard Preview](personal_finance.png)
+![Dashboard Preview](personal_finance.jpeg)
 
 ## Dashboard Features
 - Total spending
