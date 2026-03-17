@@ -17,15 +17,16 @@ The goal of this project was to build a simple, refreshable analytics workflow t
 
 ## Workflow
 1. Transaction data exported as CSV  
-2. Imported into MySQL database  
-3. SQL views created for:
+2. Cleaned and pre-processed data in Excel, including creating a `category` column using a custom category mapping for transaction classification
+3. Imported the cleaned dataset into a MySQL database  
+4. SQL views created for:
    - Category-wise spending  
    - Monthly spending trends  
    - Merchant-level spending  
    - Category share by month  
    - Year-based filtering (included directly in SQL views)  
-4. Connected Power BI to SQL outputs  
-5. Built an interactive dashboard with a year slicer  
+5. Connected Power BI to SQL outputs  
+6. Built an interactive dashboard with a year slicer  
 
 ---
 
