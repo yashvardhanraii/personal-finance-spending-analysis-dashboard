@@ -17,7 +17,7 @@ The goal of this project was to build a simple, refreshable analytics workflow t
 
 ## Workflow
 1. Transaction data exported as CSV  
-2. Cleaned and pre-processed data in Excel, including creating a `category` column using a custom category mapping for transaction classification
+2. Cleaned and pre-processed data in Excel, including creating a category column using a custom category mapping for transaction classification
 3. Imported the cleaned dataset into a MySQL database  
 4. SQL views created for:
    - Category-wise spending  
