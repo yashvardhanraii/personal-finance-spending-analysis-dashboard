@@ -1,9 +1,41 @@
 # Personal Finance Spending Analysis Dashboard
 
-## Project Overview
-This project analyses personal spending behaviour using bank transaction data. The data was processed using MySQL and visualised in Power BI through an interactive dashboard.
+## Objective
+Build a simple, data-driven dashboard to better understand my own spending habits, identify where most of my money goes, and track how my financial behaviour changes over time.
 
-The goal of this project was to build a simple, refreshable analytics workflow to track spending patterns, identify major expense categories, and understand financial behaviour over time.
+---
+
+## Project Overview
+- Analysed personal bank transaction data to understand spending patterns  
+- Built a **refreshable workflow (Excel → MySQL → Power BI)**  
+- Created an interactive dashboard to track categories, trends, and key metrics  
+
+---
+
+## Dashboard Preview
+![Dashboard Preview](personal_finance.jpeg)
+
+---
+
+## Key Insights
+
+- Total spending across the period was **$15,720**, with **Buy Now Pay Later (BNPL)** contributing **$5,081 (32.3%)**, making it my largest expense.
+- Spending is quite concentrated, with the **top 5 categories** (BNPL, Convenience, Fast Food, Travel, Transport) making up **around 70%** of total spending.
+- A large portion of BNPL spending is tied to **AfterPay**, which alone accounts for **$5,081 (32.3%)**.
+- Spending peaked in **January 2026 ($4,444)** and dropped to **$721 in March 2026**, showing a sharp **83.8% decrease**.
+- There was a rapid increase in late 2025, from **$468 in September to $3,896 in December (8.3× increase)**.
+- BNPL usage was highest in late 2025 (**62.1% of monthly spending**) and reduced significantly by early 2026 (**21.6% in January**).
+- Spending behaviour shifted in 2026:
+  - **February** was driven by **Government Fees (21.8%)**
+  - **March** was more focused on essentials, especially **Fuel (23.5%)**
+- Core categories like **Transport, Food, and Travel** remained consistent across months.
+
+---
+
+## What I took from this
+- A large portion of my spending is driven by BNPL, which can quickly add up if not monitored  
+- Most of my expenses come from a small number of categories, so focusing on these would have the biggest impact  
+- Spending spikes tend to happen in short periods, so tracking monthly trends is important to stay in control  
 
 ---
 
@@ -11,53 +43,25 @@ The goal of this project was to build a simple, refreshable analytics workflow t
 - MySQL  
 - SQL (Views & Aggregations)  
 - Power BI  
-- CSV / Excel  
+- Excel / CSV  
 
 ---
 
 ## Workflow
-1. Transaction data exported as CSV  
-2. Cleaned and pre-processed data in Excel, including creating a category column using a custom category mapping for transaction classification
-3. Imported the cleaned dataset into a MySQL database  
-4. SQL views created for:
+1. Exported transaction data as CSV  
+2. Cleaned and structured the data in Excel (including creating a category mapping for transactions)  
+3. Loaded the data into MySQL  
+4. Created SQL views for:
    - Category-wise spending  
-   - Monthly spending trends  
-   - Merchant-level spending  
+   - Monthly trends  
+   - Merchant-level analysis  
    - Category share by month  
-   - Year-based filtering (included directly in SQL views)  
-5. Connected Power BI to SQL outputs  
-6. Built an interactive dashboard with a year slicer  
+   - Year-based filtering  
+5. Connected Power BI to the SQL outputs  
+6. Built an interactive dashboard with filters and visuals  
 
 ---
 
 ## SQL Views
-SQL views were created to structure and aggregate the data for analysis. Each view includes a `year` column derived from the transaction date, enabling consistent filtering across all visuals in Power BI.
-
----
-
-## Dashboard Preview
-![Dashboard Preview](personal_finance.jpeg)
-
-## Dashboard Features
-- Total spending
-- Total transactions
-- Spending by category
-- Top 3 merchants
-- Monthly spending trend
-- Category spending by month
-- Year filter
-
----
-
-## Key Insights
-
-- Total spending across the period is **$15,720**, with **Buy Now Pay Later** contributing **$5,081 (32.3%)**, making it the dominant expense category.
-- Spending is highly concentrated, with the **top 5 categories (BNPL, Convenience, Fast Food, Travel, Transport)** accounting for **~70% of total expenditure**.
-- **AfterPay alone contributes $5,081 (32.3%)**, making it the single largest merchant and aligning directly with BNPL spending.
-- Monthly spending peaked in **January 2026 ($4,444)** and dropped to **$721 in March 2026**, representing an **83.8% decrease**.
-- Spending increased rapidly in late 2025, growing from **$468 in September to $3,896 in December (8.3× increase)** before peaking.
-- BNPL dominated late 2025, contributing up to **62.1% of monthly spending in September 2025**, but reduced to **21.6% by January 2026**.
-- Spending patterns shifted in 2026:
-  - **February 2026** driven by **Government Fees (21.8%)**
-  - **March 2026** dominated by essentials, especially **Fuel (23.5%)**
-- Core categories such as **Transport, Food, and Travel** remain consistent across all months.
+SQL views were used to organise and aggregate the data before visualisation.  
+A `year` column was added to support consistent filtering across all dashboard views.
