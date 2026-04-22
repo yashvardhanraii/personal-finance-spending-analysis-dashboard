@@ -33,9 +33,9 @@ Build a simple, data-driven dashboard to better understand my own spending habit
 ---
 
 ## What I took from this
-- A large portion of my spending is driven by BNPL, which can quickly add up if not monitored  
-- Most of my expenses come from a small number of categories, so focusing on these would have the biggest impact  
-- Spending spikes tend to happen in short periods, so tracking monthly trends is important to stay in control  
+- A large portion of my spending is driven by BNPL, which can quickly add up if not monitored.  
+- Most of my expenses come from a small number of categories, so focusing on these would have the biggest impact.  
+- Spending spikes tend to happen in short periods, so tracking monthly trends is important to stay in control.  
 
 ---
 
@@ -48,17 +48,17 @@ Build a simple, data-driven dashboard to better understand my own spending habit
 ---
 
 ## Workflow
-1. Exported transaction data as CSV  
-2. Cleaned and structured the data in Excel (including creating a category mapping for transactions)  
-3. Loaded the data into MySQL  
+1. Exported transaction data as CSV.  
+2. Cleaned and structured the data in Excel (including creating a category mapping for transactions).
+3. Loaded the data into MySQL.
 4. Created SQL views for:
    - Category-wise spending  
    - Monthly trends  
    - Merchant-level analysis  
    - Category share by month  
    - Year-based filtering  
-5. Connected Power BI to the SQL outputs  
-6. Built an interactive dashboard with filters and visuals  
+5. Connected Power BI to the SQL outputs.  
+6. Built an interactive dashboard with filters and visuals.  
 
 ---
 
